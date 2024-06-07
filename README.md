@@ -51,14 +51,17 @@ Fonctionnalités
 -calcul retard
 
 Les grandes lignes du code 
+
  -Importation des bibliothèques : Le script commence par l'importation des 
 bibliothèques nécessaires, telles que OpenCV, Dlib, Pillow, NumPy, imutils, pathlib et 
 datetime.
+
  -Chargement des modèles pré-entraînés : Il charge trois fichiers de modèles préentraînés pour la détection de visages, la prédiction des points de repère faciaux et 
 l'encodage des visages.
 
 
  -Définition de fonctions utiles :
+ 
 o transform(image, face_locations) : Transforme les coordonnées des visages 
 détectés.
 o encode_face(image) : Détecte les visages sur une image, extrait les 
@@ -66,7 +69,9 @@ encodages des visages et les coordonnées des points de repère.
 o easy_face_reco(frame, known_face_encodings, known_face_names) : 
 Effectue la reconnaissance faciale sur une trame vidéo, identifie les visages 
 connus, et dessine des rectangles et des noms sur les visages détectés.
+
  - Initialisation des variables :
+ - 
 o input_directory : Chemin vers le répertoire contenant les visages connus.
 o known_face_names : Liste des noms des personnes dont les visages sont 
 connus.
@@ -77,6 +82,7 @@ o known_face_encodings : Liste pour stocker les encodages des visages
 connus.
 - Traitement des visages connus : Charge les visages connus à partir du répertoire 
 spécifié, les encode et les stocke dans known_face_encodings.
+
 - Démarrage de la webcam et détection en temps réel :
 o Démarre la webcam.
 o Capture chaque trame vidéo.
