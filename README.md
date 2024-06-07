@@ -1,4 +1,7 @@
 Description du logiciel
+
+
+
 Le logiciel est un système de reconnaissance faciale conçu pour détecter le visage d'un 
 étudiant de l’ESMT dans une vidéo, utilisant la webcam comme source d'images. À partir 
 d'une base de données de visages préenregistrés, le logiciel identifie le nom associé au 
@@ -7,7 +10,11 @@ l'étudiant arrive à l'heure, c'est-à-dire avant 08H00, il sera considéré co
 de retard, le système enregistre la durée de retard en minutes. À 11H30, tous les étudiants 
 non détectés sont considérés comme absents d’après le règlement intérieur en cours du 
 jour.
+
+
 Notes pour l'environnement Windows 
+
+
 Sur Windows, vous devrez peut-être installer les éléments suivants en plus :
 opencv-python : Une bibliothèque Python pour la vision par ordinateur qui peut être 
 installée en utilisant pip install opencv-python.
@@ -18,7 +25,10 @@ Vous pouvez télécharger Visual Studio depuis le site officiel
 (https://visualstudio.microsoft.com/fr/) et installer l'extension C++ lors de l'installation.
 Ces étapes supplémentaires sont nécessaires pour s'assurer que l'installation de dlib se 
 déroule correctement sur un environnement Windows.
+
 Bibliothèques à installer
+
+
 Ces bibliothèques ont été installés et embarqués avec le projet :
 - opencv
 - dlib
@@ -28,13 +38,18 @@ Ces bibliothèques ont été installés et embarqués avec le projet :
 - pathlib
 -datetime
 -pandas
+
+
 Important
 Compatibles qu'avec des images .jpg et .png
+
+
 Fonctionnalités
 - Détection de visage
 - Reconnaissance faciale
 -vérifier la présence
 -calcul retard
+
 Les grandes lignes du code 
  -Importation des bibliothèques : Le script commence par l'importation des 
 bibliothèques nécessaires, telles que OpenCV, Dlib, Pillow, NumPy, imutils, pathlib et 
