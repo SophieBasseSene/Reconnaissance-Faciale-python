@@ -64,8 +64,10 @@ l'encodage des visages.
  
 o transform(image, face_locations) : Transforme les coordonnées des visages 
 détectés.
+
 o encode_face(image) : Détecte les visages sur une image, extrait les 
 encodages des visages et les coordonnées des points de repère.
+
 o easy_face_reco(frame, known_face_encodings, known_face_names) : 
 Effectue la reconnaissance faciale sur une trame vidéo, identifie les visages 
 connus, et dessine des rectangles et des noms sur les visages détectés.
@@ -73,25 +75,39 @@ connus, et dessine des rectangles et des noms sur les visages détectés.
  - Initialisation des variables :
  - 
 o input_directory : Chemin vers le répertoire contenant les visages connus.
+
 o known_face_names : Liste des noms des personnes dont les visages sont 
 connus.
+
 o presence_data : Structure de données pour la gestion de la présence avec 
 l'heure d'arrivée.
+
 o processed_names : Ensemble pour stocker les noms déjà traités.
+
 o known_face_encodings : Liste pour stocker les encodages des visages 
 connus.
+
 - Traitement des visages connus : Charge les visages connus à partir du répertoire 
 spécifié, les encode et les stocke dans known_face_encodings.
 
 - Démarrage de la webcam et détection en temps réel :
+- 
 o Démarre la webcam.
+
 o Capture chaque trame vidéo.
+
 o Utilise la fonction easy_face_reco pour reconnaître les visages et mettre à 
 jour la présence.
+
 o Affiche la trame vidéo avec des rectangles et des noms.
+
 o Définie l’état de l’étudiant détecté 
+
 o Calcul le retard
+
 o Enregistre les résultats dans un fichier Excel
+
 Lorsque la touche 'q' est enfoncée, le script se termine en libérant la webcam et détruisant 
 les fenêtres OpenCV.
+
 - Arrêt du système
