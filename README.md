@@ -56,6 +56,8 @@ bibliothèques nécessaires, telles que OpenCV, Dlib, Pillow, NumPy, imutils, pa
 datetime.
  -Chargement des modèles pré-entraînés : Il charge trois fichiers de modèles préentraînés pour la détection de visages, la prédiction des points de repère faciaux et 
 l'encodage des visages.
+
+
  -Définition de fonctions utiles :
 o transform(image, face_locations) : Transforme les coordonnées des visages 
 détectés.
